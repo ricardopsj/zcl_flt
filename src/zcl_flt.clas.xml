@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_FLT</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Filtro Dinamico</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_RANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega Rango</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_REF_RANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega Referencia Rango</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_REF_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega Referencia Valor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega Valor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_WHERE_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene la clausula where como string</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_WHERE_STRING_ABAP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene un string con el where para un loop abap</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_WHERE_STRING_SQL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene un string con el where para MSSQL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POP_COND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reempl t_cons con el Ultimo t_cond en ingresar al stack</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PUSH_COND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Agrega Estado Actual de Condiciones al Stack</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresca el filtro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Remove Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_RANGE_FROM_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Obtiene Rango a partir de un valor</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
