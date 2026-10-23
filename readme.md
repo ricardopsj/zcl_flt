@@ -58,3 +58,10 @@ flt->pop_cond( ).            " vuelve a quedar solo MATNR
 ## Tests
 
 Incluye una suite ABAP Unit (`ltcl_test`) que cubre: condición `EQ` y `BT`, rangos, múltiples campos, `remove`, `refresh`, `push`/`pop`, generación SQL y ABAP (`CP`), `st_range_from_value` y la normalización de operadores alias.
+
+## Problemas conocidos
+
+- **WHERE vacío ante errores.** `get_where_string( )` descarta la excepción de `combine_seltabs` y devuelve un string vacío. Un WHERE dinámico vacío no filtra nada: la consulta lee todas las filas.
+- **Varios `LIKE` en el mismo WHERE.** La expresión regular de `get_where_string_abap( )` es codiciosa; con dos condiciones `LIKE` en el mismo WHERE corrompe la cadena. Tampoco traduce el comodín `_` a `+`.
+- **Condición sin valores.** `add_value` y `add_ref_value` terminan en dump si no reciben ni `low` ni `high`.
+- **`pop_cond( )` con la pila vacía** deja el filtro sin condiciones.
